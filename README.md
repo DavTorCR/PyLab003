@@ -50,20 +50,31 @@ Now that you have user inputs ready, you’ll move to handling peer-to-peer comm
   ```python
   # Example
   def chat_task(ctx, pipe, n, group):  # function name is chat_task
-  ```
+
+'''python  
+    ```
   2. List all parameters and what you think they are. Put "UNSURE" if you don't have a guess.
   ```shell
+
   # Example
   ctx: This is a ZeroMQ Connection Context
   pipe: This is a communications pipe polled by ZeroMQ for messages.
   n: This is the peer to peer node my chat app is connected as
   group: This is the peer chat group I wanted to join
   ```
+
+```shell
+username: I assume this is the username typed in by the user.
+```
+
   3. Note if the function **returns** anything. If it does, note what you believe it returns, and make a final note about what you believe the function may do.
   ```shell
   # Example
   The chat_task method does not return anything, it appears to be the send/recieve manager.
   ```
+
+```shell
+n: is returned, and I think its a peer node.
 
 ## Combining the Functions to Create the Peer-to-Peer Chat
 In this part, you will combine all the functions from Part 1 and Part 2 to create a functioning peer-to-peer chat.
