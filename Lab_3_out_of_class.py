@@ -62,7 +62,7 @@ def start_chat():
         channel.send("$$$STOP".encode('utf-8'))
         print("FINISHED")
 
-printstart_chat()
+print(start_chat())
 
 
 
